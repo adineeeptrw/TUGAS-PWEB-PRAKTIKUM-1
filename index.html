@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hai | Portofolio Adine Putri Widati</title>
+  <meta name="description" content="Portofolio sederhana mahasiswa Sistem Informasi: proyek database, C#, dan web.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="brand">Hai</a>
+
+    <nav id="nav" class="nav" aria-label="Menu utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#skill">Skill</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" type="button" aria-label="tombol pengganti tema">
+        <span id="themeIcon" aria-hidden="true">☾</span>
+      </button>
+      <button id="menuToggle" class="icon-btn menu-btn" type="button" aria-label="Buka menu" aria-expanded="false"
+        aria-controls="nav">
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Halo, kenalin ini tugas praktikum Pemograman Berbasis Webku!</h1>
+        <p>
+          Aku adalah Mahasiswa Teknologi Informasi Universitas Jember Tahun 2025. Aku suka sekali menonton barbie.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#proyek">Lihat proyek</a>
+          <a class="btn btn-ghost" href="#kontak">Hubungi saya</a>
+        </div>
+      </div>
+
+      <aside class="record" aria-label="Ringkasan profil">
+        <div class="record-head">
+          <span class="record-dot"></span>
+          <span class="record-title">mahasiswa</span>
+        </div>
+        <dl class="record-body">
+          <div>
+            <dt>nama</dt>
+            <dd>Adine Putri Widati</dd>
+          </div>
+          <div>
+            <dt>prodi</dt>
+            <dd>Teknologi Informasi</dd>
+          </div>
+          <div>
+            <dt>kampus</dt>
+            <dd>Universitas Jember</dd>
+          </div>
+          <div>
+            <dt>fokus</dt>
+            <dd>Masa depan</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="tentang" class="section">
+      <h2>Tentangku</h2>
+      <div class="about-grid">
+        <p>
+          Aku mahasiwa Teknologi Informasi angkatan 25 di UENJ. Asal saya dari Probolinggo yaitu kota yang terkenal
+          dengan buah mangga dan buah anggurnya. Aku suka sekali nge DIY barang - barang, menggambar, dan melukis.
+          Aku suka juga menonton KPOP terutama BTS. Aku pingin banget pergi ke Korea
+
+        </p>
+        <p>
+          Di Fakultas Ilmu Komputer ini banyak sekali yang aku pelajari seperti Algoritma, Basis Data, Pemrograman Web,
+          dan masih
+          banyak yang lainnya. Sejauh ini matkul yang aku suka yaitu UI/UX.
+        </p>
+      </div>
+    </section>
+
+    <section id="skill" class="section">
+      <h2>Skill</h2>
+      <div id="skillFilters" class="filters" role="group" aria-label="Filter skill"></div>
+      <ul id="skillList" class="chips"></ul>
+    </section>
+
+    <section id="proyek" class="section">
+      <h2>Proyek</h2>
+      <div id="projectGrid" class="project-grid"></div>
+    </section>
+
+    <section id="kontak" class="section">
+      <h2>Kontak</h2>
+      <div class="contact-grid">
+
+        <form id="contactForm" class="form" novalidate>
+          <label for="nama">Nama</label>
+          <input id="nama" name="nama" type="text" autocomplete="name">
+          <p class="error" id="namaError" aria-live="polite"></p>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email">
+          <p class="error" id="emailError" aria-live="polite"></p>
+
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4"></textarea>
+          <p class="error" id="pesanError" aria-live="polite"></p>
+
+          <button class="btn btn-primary" type="submit">Kirim pesan</button>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-card">
+          <p>Lebih suka ngobrol langsung? Hubungi aku lewat:</p>
+          <ul>
+            <li><a href="https://wa.me/6289602579753" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/adine_ptrw?stkn=djRsZnRraDYzNzc3" target="_blank"
+                rel="noopener noreferrer">Instagram</a></li>
+            <li><a
+                href="https://www.linkedin.com/in/adine-putri-widati-7a5340381?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Hai!! ini dibuat oleh Adine</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
